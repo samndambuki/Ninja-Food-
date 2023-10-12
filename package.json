@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "concurrently \"npm run watch-css\" \"lite-server\"",
+    "watch-css": "tailwindcss watch src/styles.css -o public/styles.css -i src/styles.css",
     "build-css": "tailwindcss build src/styles.css -o public/styles.css -i src/styles.css"
   },
   "keywords": [],
@@ -11,5 +13,8 @@
   "license": "ISC",
   "dependencies": {
     "tailwindcss": "^3.3.3"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
   }
 }
