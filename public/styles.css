@@ -552,10 +552,6 @@ video {
   display: flex;
 }
 
-.justify-end{
-  justify-content: flex-end;
-}
-
 .justify-center{
   justify-content: center;
 }
@@ -611,6 +607,11 @@ video {
   line-height: 1;
 }
 
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -636,4 +637,15 @@ video {
 .text-secondary-200{
   --tw-text-opacity: 1;
   color: rgb(136 136 131 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px){
+  .md\:justify-end{
+    justify-content: flex-end;
+  }
+
+  .md\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }
